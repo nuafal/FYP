@@ -4,7 +4,7 @@
     <!--<arg name="model" default="$(find scort_robot)/urdf/rover.urdf.xacro"/>
     <param name="robot_description" textfile="$(arg model)" /> -->
 
-    <param name="robot_description" command="$(find scort_robot)/xacro '$(find scort_robot)/urdf/rover.urdf.xacro'"/>
+    <param name="robot_description" command="$(find scort_robot) '$(find scort_robot)/urdf/rover.urdf.xacro'"/>
     <arg name="rviz_config_file" default="$(find scort_robot)/config/robot.rviz"/>
     
     <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"/>
